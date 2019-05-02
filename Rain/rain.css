@@ -1,0 +1,105 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.rainDrop {
+	position: absolute;
+	background: linear-gradient(180deg, white, black 90%, black);
+	border-radius: 100% 100% 80% 80%;
+}
+span{
+	margin-bottom: 5px;
+}
+b{
+	box-sizing: border-box;
+	font-style: normal;
+  font-weight: 1;
+  font-size: 25px;
+	line-height: 1em;
+	font-family: "Exo 2";
+  overflow: hidden;
+	text-overflow: ellipsis;
+	border-bottom: 1px solid rgba(120, 201, 255, 0.589);
+	margin-bottom: 5px;
+}
+.btn-section {
+  font-style: normal;
+  font-weight: 1;
+  font-size: 25px;
+  line-height: 1em;
+  font-family: "Exo 2";
+	text-transform: uppercase;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	right: 50px;
+	top: 50px;
+	padding: 20px 10px;
+	background: rgba(12, 35, 57, 0.904);
+	border: 5px solid #e6e6ff;
+	z-index: 101;
+	box-shadow: 0px 0px 60px #4d88ff, inset 0px 0px 60px #4d88ff;
+	color: rgb(245, 245, 245);
+	letter-spacing: .06em;
+}
+
+.drop-btn {
+	border: 3px solid #e6e6ff;
+	display: block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	text-decoration: none;
+	background: #464646;
+	box-shadow: 0px 0px 20px #4d88ff, inset 0px 0px 20px #4d88ff;
+	font-size: 20px;
+	cursor: pointer;
+	margin: 10px;
+
+}
+
+.drop-btn:hover {
+	background: #00000067;
+}
+.btn-change:hover {
+	background: #00000067;
+}
+.picker:hover{
+	background: #00000067;
+}
+.slider{
+	width: 160px;
+	border: 0;
+	height: 2px;
+	background: #13093dc9;
+	outline: none;
+	margin-bottom: 20px;
+}
+
+.picker{
+	background: #e6e6ff;
+	border: #fcfcff00;
+	box-shadow: 0px 0px 20px #709ffc, inset 0px 0px 20px #699bff;
+}
+
+.btn-change{
+	border: 3px solid #e6e6ff;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	background: #46464600;
+	box-shadow: 0px 0px 20px #4d88ff, inset 0px 0px 20px #4d88ff;
+	font-size: 20px;
+	cursor: pointer;
+	margin: 10px;
+}
+
+
+

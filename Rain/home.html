@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Exo+2:400,900italic,900,800italic,800,700italic,700,600italic,600,500italic,500,400italic,300italic,300,200italic,200,100italic,100' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="rain.css">
+</head>
+
+<body>
+	<div class="btn-section">
+		<span>
+			<b>Drops:
+				<span id="dropsNum">
+
+				</span>
+			</b>
+		</span>
+		<a class="drop-btn" onclick="changeNumDrops(100);">100</a>
+		<a class="drop-btn" onclick="changeNumDrops(500);">500</a>
+		<a class="drop-btn" onclick="changeNumDrops(800);">800</a>
+		<a class="drop-btn" onclick="changeNumDrops(1000);">1000</a>
+
+		<span>
+			<b>Drops speed</b>
+		</span>
+		<div>
+			<input type="range" class="slider" min="1" max="50" value="1" id="slider" onchange="update()">
+		</div>
+
+
+		<span>
+			<b>X direction</b>
+		</span>
+		<div>
+			<input type="range" class="slider" min="-10" max="10" value="0" id="slider2" onchange="update()">
+		</div>
+
+		<span>
+			<b>Drop size</b>
+		</span>
+		<div>
+			<input type="range" class="slider" min="0" max="3" value="0" id="slider3" onchange="update()">
+		</div>
+		
+		<br>
+		<div>Bg color:   <input id="colorPicker" type="color" class="picker" value="white"/></div>
+		<br>
+		<div>Drop color: <input id="colorPicker2" type="color" class="picker"/></div>
+		<br>
+		<a class="btn-change" onclick="changecolors();">Change colors</a>
+
+		
+	</div>
+
+	<div id="drops-section"></div>
+	<script src="drop.js"></script>
+	<script src="rain.js"></script>
+</body>
+</html>
